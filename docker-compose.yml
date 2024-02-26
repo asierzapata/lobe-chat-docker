@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+  lobe-chat:
+    image: lobehub/lobe-chat
+    container_name: lobe-chat
+    restart: always
+    ports:
+      - "3210:3210"
+    environment:
+      ACCESS_CODE: asidia
+      OLLAMA_PROXY_URL: http://host.docker.internal:11434/v1
