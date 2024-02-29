@@ -18,7 +18,7 @@ Then you can access the chat interface at `http://localhost:3210`.
 ## What does each file do?
 
 - Shell Scripts
-  - `auto-update-lobe-chate.sh`: This script is used to automatically update the lobe-chat-docker image. It is intended to be run as a cron job.
+  - `auto-update-lobe-chat.sh`: This script is used to automatically update the lobe-chat-docker image. It is intended to be run as a cron job.
   - `install-models.sh`: This script is used to install the ollama models into the ollama container. For now includes `mistral`, `gemma` and `llama2` models. To save space, each model is commented except for `gemma`.
   - `start.sh`: This script is used to start the lobe-chat-docker container and install the needed models
 - Docker Files
